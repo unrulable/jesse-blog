@@ -1,0 +1,283 @@
+---
+title:  "PGP"
+date:   2022-05-08 19:45:00 -0500
+show_title: false
+show_edit_on_github: false
+cover: '/img/PGP/pgpbanner.jpg'
+article_header:
+  type: overlay
+  theme: dark
+  background_color: '#203028'
+  background_image:
+    gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
+    src: /img/PGP/pgpbanner.jpg
+---
+# Intro
+In this post, I'll run through a general overview of PGP as I understand it, what PGP program I used for my initial setup and key generation, and lastly, I'll explain how I am actively using it today. Party on Garth...
+
+<br/>
+# PGP Quick Overview
+Created by cryptographer [Phil Zimmerman](https://en.wikipedia.org/wiki/Phil_Zimmermann) in 1991, PGP stands for **P**retty **G**ood **P**rivacy, it's an encryption system used in data communication that utilizes [public key cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) to sign and encrypt/decrypt data.
+
+When using a PGP program you will have 2 keys generated, 1 public key and 1 private key, and you'll use these keys to communicate with any other person in the world that is also utilizing PGP. PGP is known as the closest to military grade encryption that is available for public use; a perfectly private communication system.
+
+<br/>
+### Public Keys
+Your public key should be broadcast to the world. Put it on your blog, your social media accounts, etc.
+
+This is the key that others can use to encrypt the data/message/email they are sending you during your communications.
+
+<br/>
+### Private Keys
+
+Your private key must be kept a secret, as this is the key that gives you the ability to decrypt messages and data and provide your signature to authenticate yourself.
+
+If your private key, gets leaked or hacked, then in theory, whoever has your private key will have the ability to decrypt messages and data sent with your public key. They can also impersonate you by signing with your private key.
+
+<br/>
+### Encryption Process
+![PGP Encryption Process](/img/PGP/pgpencryptionprocess.jpg)
+
+<br/>
+### Why Use It?
+- **Authentication:** You can sign using your private key, thus proving your identity.
+- **Data Protection:** It ensures the data sent was not modified during transmission.
+- **Privacy:** Data is always encrypted and secure, only to be viewed by the parties involved.
+- **Security:** Data can be shared securely between two or many users.
+
+<br/>
+# How to Set it Up?
+
+### Install PGP Software
+
+Since my computer is using Linux Mint, I used [GnuPG](https://gnupg.org/), which is a free software implementation of the PGP system standard.
+
+<br/>
+To start things off, I ran the command below to install [GnuPG](https://gnupg.org/) along with GPA.
+
+*Note: GPA stands for GNU Privacy Assistant, it is the graphical user interface for GnuPG.*
+{% highlight CMD %}
+  sudo apt-get install gnupg2 gpa
+{% endhighlight %}
+
+<br/>
+![Install GnuPG Output](/img/PGP/installgnupgoutput.jpg)
+
+<br/>
+<br/>
+### Generate the Key Pair
+
+After installation completed, the next thing I did was generated my key pair.
+
+To do so, I ran the following command.
+
+{% highlight CMD %}
+  gpg --full-generate-key
+{% endhighlight %}
+
+<br/>
+
+I was prompted to select the type of key I wanted.
+
+I selected option 1: [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) and RSA (default).
+
+![Key Type](/img/PGP/generatekeyscommandandselection.jpg)
+
+<br/>
+<br/>
+Next, I was prompted to select the bit size. The default option is 3072, but I selected the maximum of 4096 bits.
+
+![Key Size](/img/PGP/keysize.jpg)
+
+<br/>
+<ationbr/>
+I also needed to specify how long the keys should, I selected "0 = key does not expire".
+
+![Key Expiration](/img/PGP/keyexpire.jpg)
+
+<br/>
+<br/>
+I specified the user id that I wanted associated to my keys and then entered "o" or "q" to confirm the entry.
+
+![User Info](/img/PGP/userinfo.jpg)
+
+<br/>
+<br/>
+I created a super duper strong passphrase for my key pair.
+
+***Do not forget this passphrase.***
+
+![Enter Passphrase](/img/PGP/enterpassphrase.jpg)
+
+<br/>
+<br/>
+
+And finally, the keys were generated, yay!!
+
+![Done Output](/img/PGP/doneoutput.jpg)
+<br/>
+<br/>
+
+### Using GPA
+
+<br/>
+I used the command below to launch GPA
+
+{% highlight CMD %}
+  sudo gpa
+{% endhighlight %}
+
+<br/>
+
+When GPA is first opened, it asked if I wanted to generate a private key. Since this is my first time using it, I clicked on "Generate key now".
+
+<br/>
+![Generate Private Key](/img/PGP/generateprivatekey.jpg)
+
+<br/>
+<br/>
+Entered in my details...
+
+![Enter Full Name](/img/PGP/enterfullname.jpg)
+
+
+![Enter Email Address](/img/PGP/enteremailaddress.jpg)
+
+<br/>
+It's best to back up the key now, so I backed dat shit up.
+
+![Back Up Key](/img/PGP/takebackupofkey.jpg)
+
+<br/>
+Finally, entered my passphrase for my private key and confirmed it.
+
+![Private Key Passphrase](/img/PGP/enterpassphraseprivatekey.jpg)
+
+<br/>
+<br/>
+Now in the key manager area of GPA, I could see the private key entry that was just created.
+
+![Key Manager Key](/img/PGP/keymanagerkey.jpg)
+
+<br/>
+# Exporting Keys
+
+### Public Key
+
+In order to paste your public key anywhere and everywhere, you have to have a copy of it first.
+
+To get the copy, I clicked on the export button to export a copy of my public key.
+
+![Export Public Key](/img/PGP/exportpublickey.png)
+
+<br/>
+
+Selected the destination path to save my public key.
+![ave Pub Key](/img/PGP/savepubkey.jpg)
+
+<br/>
+<br/>
+
+ ```text
+ -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+ mQENBGJ1cdkBCACz/YVLtpdtQ0wZbLeXgdu3RIs/7Nl0C3oQO+xgx/yAD+z/9EjJ
+ 1J80zosqkFjvYLK8Z11oSIQpfrpW48QbSzSOL4Xzh6L5TdJeW6vYFzI1sBjrcj5P
+ qL81o07IG/HQN82YFUD8gHYSJUaBLCF2VDGMszEUsemSexlJpVlFAgoC1+TI4ymO
+ GdRTUlAcqCxhVQ4jHGrSN3o5/Jg/2jwgFwxT32lvZ39bHVjoQfeLeF9Sg6aZWMqi
+ 1jiBfYaDAB3sT5ZPsBmfttppaTM+10udzeF8kYpT4StglLtWvpzSvtR2qoV/wnuO
+ joZOQvDU23e7QA49x5RAqaEyATIKmt/QWNC/ABEBAAG0J3VucnVsYWJsZSBibG9n
+ IDxjb250YWN0QHVucnVsYWJsZS5ibG9nPokBTgQTAQoAOBYhBECRfdS9W8z5Qshc
+ ETbkyQVE0DCtBQJidXHZAhsDBQsJCAcCBhUKCQgLAgQWAgMBAh4BAheAAAoJEDbk
+ yQVE0DCtNlIH/0kIedJbD7AP0iCH4J+IP+5mtkzIX9lOlirRz7tqmSFfvC9ZVcPf
+ ZLi647VY+/5spXYkk+0pj4IXfgliYGlJBeRSzXb1+Z5C+eBol0ykJG3RHf170inp
+ IG42PNmxB7X9ap5Iv+xmdjTtfwNmiqSPQPur6nz81vZMq2+GVImCxWVYtScOw8Iw
+ K1PfKaXyecXRFhVsQNgWf3LH4Rmg7YfIFnJHT63+r97hGHCzk/tjV3l0TP4keomQ
+ 6nfeEp51yYQAbwTkD1zss8bGYqLVO+nbvPWEtYnoL2cgmmm8d7b+L5vYOPKf3QS8
+ NQ0es5GMZl3l3MAwYmVUNu4S+Vo10tXoUsW5AQ0EYnVx2QEIAP1Z3jdsqmbZ8mHN
+ ALIP9w9+pHarBpHf+M2TdkpYdFhOKukFlVSNaEXopgHbFzhHp6lgkorIG0divJVX
+ Eolow7dIGG1HGQuh6R5CH6/rzNWY4LECVa+IPO1Mxvj8KR+7Fw5uesqjFDD8lU9P
+ cNqu18csoR9HqTQtpNNB8U2tgR7o5xRyEZc4zTSfug1G3KVTh7WBvILW+c6Ul1kN
+ +OHCJTgGFwyFLSdM7oLzp/iKmstxjwwmprqTAi8HiMo5h9LpRi857DsZyxrBO/lM
+ VIxUGXnqX10DXXRrWfEY4nDGbBBdqXUo2VIep9Mjz0Yijo30/x/qnypqZm4yWH7C
+ gBhJ+/8AEQEAAYkBNgQYAQoAIBYhBECRfdS9W8z5QshcETbkyQVE0DCtBQJidXHZ
+ AhsMAAoJEDbkyQVE0DCtkFoH/219PEx4JhB9iWmEMz3V53m8cW7bO3uEtWKM3w3u
+ zBCIxhAFKnN/bXCXuQn43oCwmg+IE0fr8wZCjPW1D6f9wM25/yIhJePDqlO9Vr5S
+ mik6nN9DNGAlm+pFvvOK5JwKDASMYPQJ0tiyaCGY2jn132l0X2JUptxim39WwFXs
+ fCdyTRizYRH0hYrwWP15LiKWeOmII/M9nUxOhUk2l/BVTeiyu119EzMY6zE4Ka2d
+ OhaAJyt25OIbdqsJCGiN0hW621QMkHOUuD2dF6v2dTpR6s3hDOFVG+sBgOzvdJ9p
+ yl3Xwel/t6nW2Z/OTXDbIzRnRYNnn9GUhAs2Rn4msC6wfw8=
+ =Zkkm
+ -----END PGP PUBLIC KEY BLOCK-----
+```
+My Public Key
+
+![Looky Here](https://media.giphy.com/media/QMZpnb79N5BN0wsSM3/giphy.gif)
+
+
+<br/>
+<br/>
+### Private Key
+
+To export my private key, I could navigate under the "Keys" nav menu item and then select "Backup..." and then simply select the location where I wanted to save the private key.
+
+*Note: I'm not doing this.*
+
+![Export Private Key](/img/PGP/exportprivatekey.jpg)
+
+<br/>
+<br/>
+
+# Using PGP
+
+### Encrypting Data
+
+Let's say you want to send your friend a message using PGP, simply navigate into the "Keys" nav menu item and then select "Import Keys...". Then select your friend's public key to import, as you'll need to use your friend's public key to encrypt the message.
+
+Next, open up the clipboard.
+
+![Clipboard](/img/PGP/clipboard.jpg)
+
+<br/>
+Input some text.
+
+![Clipboard Input Text](/img/PGP/clipboardinputtext.jpg)
+
+<br/>
+<br/>
+To encrypt the message, click on the "Encrypt the buffer text" button.
+
+![Encrypt the Buffer Text](/img/PGP/encryptthebuffertextbutton.jpg)
+
+<br/>
+<br/>
+Select the public key to use for encryption.
+
+*Note: For this example, I'm just using the unrulable blog public key to demonstrate how the encryption process works.*
+
+![Select Pub Key for Encryption](/img/PGP/selectpublickeyforencryption.jpg)
+
+<br/>
+<br/>
+Encryption in process...
+
+![Encryption in Process](/img/PGP/encryptioninprocess.jpg)
+
+<br/>
+<br/>
+Encryption completed... You should now have your encrypted message that looks similar to the screenshot below.
+
+![Encryption Completed](/img/PGP/encryptioncompleted.jpg)
+
+<br/>
+<br/>
+### Decrypting Data
+
+To decrypt the encrypted message we just created, simply click on the "Decrypt the buffer text" button.
+
+![Decrypt the Buffer Text](/img/PGP/decryptthebuffertextbutton.jpg)
+
+<br/>
+<br/>
+You should now see the original message content like shown below.
+![Clipboard Input Text](/img/PGP/clipboardinputtext.jpg)
