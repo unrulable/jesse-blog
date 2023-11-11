@@ -12,6 +12,7 @@ article_header:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
     src: /img/antiwindows.jpg
 ---
+
 # Intro
 Due to the increased monitoring and collection of data, which you can read through Microsoft's [privacy statement](https://privacy.microsoft.com/en-us/privacystatement) to see exactly what they are collecting and doing with our data, I'm switching all of my computers from Windows OS to Linux. This blog will document the adventure I went through when converting one of my computers...
 
