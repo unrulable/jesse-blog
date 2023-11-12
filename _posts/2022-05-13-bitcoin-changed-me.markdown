@@ -1,9 +1,11 @@
 ---
+layout: home
 title:  "Bitcoin Changed Me"
 date:   2022-05-13 20:07:00 -0500
 show_title: false
 show_edit_on_github: false
 cover: '/img/Bitcoin/bitcoin-post-banner.jpg'
+image: '/img/Bitcoin/bitcoin-post-banner.jpg'
 article_header:
   type: overlay
   theme: dark
@@ -97,13 +99,8 @@ When you use your own hardware wallet you take back control of your private keys
 
 ### My Hardware Wallets
 
-***Note: The BitBox02 is my main wallet and is the only I would suggest***
-
   - [BitBox02](https://shiftcrypto.ch/bitbox02/) Bitcoin Only edition.
-  - [KeepKey](https://shapeshift.com/keepkey)
-  - [Ledger Nano S/X](https://www.ledger.com/)
-  - [SecuX V20](https://secuxtech.com/secux-v20-hardware-wallet/)
-  - [Trezr](https://trezor.io/)
+  - [Cold Card](https://coldcard.com/)
 
 ## Steel Wallets
 In order to increase the resiliency of my crypto security, I always use a steel wallet to keep a backup of my wallet's [seed phrase](https://en.bitcoin.it/wiki/Seed_phrase). I'll have my original seed phrase entry written in my [Shieldfolio](https://shieldfolio.com/) notebook and then I have a copy of that seed phrase stored in my steel wallet.

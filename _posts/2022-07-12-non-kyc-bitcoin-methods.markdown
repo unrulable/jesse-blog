@@ -1,9 +1,11 @@
 ---
+layout: home
 title:  "Non-KYC Bitcoin Methods"
 date:   2022-07-12 04:55:00 -0500
 show_title: false
 show_edit_on_github: false
-cover: '/img/kyc-cover.jpg'
+#cover: '/img/kyc-cover.jpg'
+image: '/img/kyc-cover.jpg'
 article_header:
   type: overlay
   theme: dark

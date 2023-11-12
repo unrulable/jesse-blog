@@ -1,9 +1,11 @@
 ---
+layout: home
 title:  "Sparrow Wallet and my BitBox02"
 date:   2022-06-20 11:00:00 -0500
 show_title: false
 show_edit_on_github: false
 cover: '/img/SparrowWallet/sparrow-logo.jpg'
+image: '/img/SparrowWallet/sparrow-logo.jpg'
 article_header:
   type: overlay
   theme: dark

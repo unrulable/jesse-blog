@@ -25,23 +25,25 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site,Sovereign Daddy e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
+logo: /img/SiteLogo.png
 # github_username:  jekyll
 
 # Build settings
 #theme: just-the-docs
-theme: jekyll-text-theme
+#theme: jekyll-text-theme
+theme: jekyll-theme-so-simple
 plugins:
   - jekyll-feed
 
 ## => Site Settings
 ##############################
+skin: "/assets/css/skins/light.css"
 text_skin: orange # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     :  # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : Jesse
 description: > # this means to ignore newlines until "Language & timezone"
-  :not rulable : ungovernable
 ## => Language and Timezone
 ##############################
 lang: en # the language of your site, default as "en"
@@ -52,14 +54,14 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ##############################
 author:
   type      : person # "person" (default), "organization"
-  name      : Sovereign Daddy
-  url       :
+  name      : Jesse
+  url       : #
   avatar    : # path or url of avatar image (square)
   bio       : Privacy and self-hosting enthusiast. I created this blog to document my sovereign adventures
     and share this information with anyone who stumbles upon this blog.
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : _unrulable
+  twitter   : #
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
@@ -73,7 +75,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: unrulable/blog
+repository: jesse/blog
 repository_tree: main
 
 

@@ -1,9 +1,11 @@
 ---
+layout: home
 title:  "My Personal Server"
-date:   2023-11-02 05:30:00 -0500
+date:   2023-11-11 05:30:00 -0500
 show_title: false
 show_edit_on_github: false
-cover: '/img/start9Embassy/start9EmbassyDevice.jpg'
+#cover: '/img/start9Embassy/start9EmbassyDevice.jpg'
+image: '/img/start9Embassy/start9EmbassyDevice.jpg'
 article_header:
   type: overlay
   theme: dark
@@ -12,6 +14,8 @@ article_header:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
     src: /img/start9Embassy/start9EmbassyDevice.jpg
 ---
+# Notes
+This article was originally written in early 2022, I am completing it now after reviving my blog. Dated: 2023-11-12.
 
 # Intro
 Introducing the personal server, your own cloud where you can store your data privately, where you are in charge of your data and where you decide how to best manage YOUR data. This is the alternative to centralized services that I've chosen, and this post will be about my experience with the [Start9 Embassy](https://store.start9.com/products/embassy) personal server, how I set it up, and how it has completely replaced my use of common cloud storage services such as Google Drive, OneDrive, etc.
