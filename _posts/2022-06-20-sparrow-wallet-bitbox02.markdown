@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title:  "Sparrow Wallet and my BitBox02"
 date:   2022-06-20 11:00:00 -0500
 show_title: false

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title:  "Switching to Linux"
 date:   2022-04-29 08:30:00 -0500
 show_title: false

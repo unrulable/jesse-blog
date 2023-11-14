@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title:  "PGP"
 date:   2022-05-08 19:45:00 -0500
 show_title: false

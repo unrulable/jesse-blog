@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title:  "My Personal Server"
 date:   2023-11-11 05:30:00 -0500
 show_title: false

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title:  "Bitcoin Changed Me"
 date:   2022-05-13 20:07:00 -0500
 show_title: false
