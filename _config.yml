@@ -32,6 +32,7 @@ logo: /img/avatar.png
 #theme: just-the-docs
 #theme: jekyll-text-theme
 theme: jekyll-theme-so-simple
+#theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 

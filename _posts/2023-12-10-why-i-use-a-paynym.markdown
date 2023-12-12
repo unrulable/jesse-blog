@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Advantages of Using a PayNym for Bitcoin Transactions"
+title:  "PayNym: Why I use one"
 date:   2023-12-10 05:12:00 -0500
 show_title: true
 show_edit_on_github: false
@@ -10,7 +10,7 @@ article_header:
   background_color: '#203028'
   background_image:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87, .4), rgba(139, 34, 139, .4))'
-    image: /img/PayNym/paynym-bitcoin.jpg
+    image: /img/PayNym/paynymIcon.png
 ---
 
 In the ever-evolving landscape of Bitcoin and cryptocurrency, privacy and security are paramount concerns for users. One innovative solution that addresses these concerns is the use of PayNyms. In this post, we'll explore the advantages of using a PayNym for your Bitcoin transactions and how it enhances privacy and convenience in the digital financial realm.
@@ -44,11 +44,11 @@ Address reuse can pose privacy risks, as it allows external parties to link mult
 To start using a PayNym for your Bitcoin transactions:
 
 1. **Download Samourai Wallet:**
-   Install the Samourai Wallet on your mobile device.
+   Install the [Samourai Wallet](https://samouraiwallet.com/download) on your mobile device or computer.
 
 2. **Create a PayNym:**
-   Follow the wallet's instructions to create your unique PayNym.
-
+   Follow the wallet's instructions to create your unique [PayNym](https://paynym.is/claim).
+   
 3. **Share Your PayNym:**
    Once created, share your PayNym with others for private and consistent transactions.
 

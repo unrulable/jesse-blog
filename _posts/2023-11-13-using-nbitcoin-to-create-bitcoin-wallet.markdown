@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "NBitcoin Create Wallet Codez"
+title:  "NBitcoin Create Wallet Code"
 date:   2023-11-13 19:31:00 -0500
 show_title: false
 show_edit_on_github: false
