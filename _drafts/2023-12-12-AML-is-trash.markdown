@@ -13,7 +13,7 @@ article_header:
     image: /img/AML-Privacy/privacy-vs-aml.jpg
 ---
 
-Hey there, privacy warriors! Today, let's dive into the buzzkill world of Anti-Money Laundering (AML) regulations. Sure, the governement says they're meant to keep shady financial activities at bay, but guess what? They come with a not-so-fun side effect – a massive invasion of your privacy. 
+Just a simple post on Anti-Money Laundering (AML) regulations and how this negatively affects the Bitcoin landscape. 
 
 # AML: The Good, the Bad, and the Ugly
 
@@ -37,7 +37,7 @@ All that data they're collecting? It can easily lead to profiling. Suddenly, you
 
 # Finding the Sweet Spot: Privacy and Security Tango
 
-Now, let's not throw the baby out with the bathwater. We get it – fighting financial crime is essential. But can't we do it without sacrificing our privacy? Here's how we could find that sweet spot:
+Now, let's not throw the baby out with the bathwater. We get it – fighting financial crime is essential. But can't we do it without sacrificing our privacy? Here's some thoughts:
 
 ## **1. Keep It Transparent**
 
@@ -49,7 +49,7 @@ If they're gonna collect our data, they better guard it like it's Fort Knox. Enc
 
 ## **3. Data Detox**
 
-Once the AML checks are done and dusted, how about a little data detox? Anonymize it, delete it – just don't hang on to it forever without a darn good reason.
+Once the AML checks are done and dusted, how about a little data detox? Anonymize it, delete it – just don't hang on to it forever.
 
 ## **4. Privacy First, Tech Second**
 
